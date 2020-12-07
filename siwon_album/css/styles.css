@@ -1,0 +1,39 @@
+@import "reset.css";
+@import "main.css";
+
+:root {
+  --padding-default: 20px;
+  --padding-2x: 40px;
+  --margin-default: 20px;
+  --margin-2x: 40px;
+  --margin-4x: 80px;
+
+  --title-black: rgb(31, 31, 31);
+  --title-white: rgb(251, 251, 251);
+
+  --font-color: #cc9767;
+  --font-color-dark: #ae6e4e;
+  --font-color-deep: #8b4411;
+
+  --bg-color-body: #f5f5dd;
+  --bg-color-title: #c7ad7f;
+  --bg-color-main: #a57a5a;
+
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color-body);
+  color: var(--title-black);
+  cursor: default;
+}
