@@ -1,0 +1,98 @@
+:root {
+  --padding-default: 20px;
+  --padding-2x: 40px;
+  --margin-default: 20px;
+  --margin-2x: 40px;
+  --margin-4x: 80px;
+
+  --title-black: rgb(31, 31, 31);
+  --title-white: rgb(251, 251, 251);
+
+  --font-color: #cc9767;
+  --font-color2: #ae6e4e;
+  --font-color3: #8b4411;
+
+  --bg-color-body: #f5f5dd;
+  --bg-color-title: #c7ad7f;
+  --bg-color-main: #a57a5a;
+
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+.header {
+  padding: 20px;
+}
+
+.header__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__link {
+  width: 33%;
+  height: 80px;
+  background-color: var(--bg-color-title);
+  text-align: center;
+  line-height: 80px;
+  color: var(--title-white);
+  font-size: var(--font-regular);
+}
+
+.header__link:hover {
+  background-color: var(--bg-color-main);
+}
+
+.main__container {
+  padding: var(--padding-2x);
+}
+
+.main__dday-Container {
+  padding: var(--padding-2x);
+  display: flex;
+}
+
+.main__dday {
+  width: 33%;
+  text-align: center;
+  font-size: var(--font-regular);
+  color: var(--bg-color-main);
+}
+
+.main__image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--margin-4x);
+}
+
+.main__wedding-text {
+  position: absolute;
+  display: none;
+  font-size: var(--font-large);
+}
+
+.main__wedding-img {
+  width: 100%;
+  /* border-radius: 5px; */
+}
+
+.main__image-container:hover .main__wedding-text {
+  display: inline-block;
+}
+
+.footer {
+  text-align: center;
+  color: var(--bg-color-main);
+  margin-bottom: var(--margin-2x);
+}
