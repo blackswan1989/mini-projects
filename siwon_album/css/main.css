@@ -1,55 +1,106 @@
-:root {
-  --padding-default: 20px;
-  --padding-2x: 40px;
-  --margin-default: 20px;
-  --margin-2x: 40px;
-  --margin-4x: 80px;
-
-  --title-black: rgb(31, 31, 31);
-  --title-white: rgb(251, 251, 251);
-
-  --font-color: #cc9767;
-  --font-color2: #ae6e4e;
-  --font-color3: #8b4411;
-
-  --bg-color-body: #f5f5dd;
-  --bg-color-title: #c7ad7f;
-  --bg-color-main: #a57a5a;
-
-  --font-large: 48px;
-  --font-medium: 28px;
-  --font-regular: 18px;
-  --font-small: 16px;
-  --font-micro: 14px;
-
-  --weight-bold: 700;
-  --weight-semi-bold: 600;
-  --weight-regular: 400;
-}
-
-.header {
-  padding: 20px;
-}
+/* header */
 
 .header__container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  padding-top: 5px;
 }
 
 .header__link {
-  width: 33%;
-  height: 80px;
-  background-color: var(--bg-color-title);
+  width: 10%;
+  height: 60px;
+  background-color: var(--bg-color-body);
   text-align: center;
-  line-height: 80px;
-  color: var(--title-white);
+  line-height: 60px;
+  color: var(--bg-color-title);
   font-size: var(--font-regular);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.header__link:last-child {
+  margin-right: 30px;
 }
 
 .header__link:hover {
-  background-color: var(--bg-color-main);
+  background-color: var(--bg-color-title);
+  color: var(--font-color-white);
+}
+
+/* home(index.html) page */
+
+#home {
+  color: var(--title-white);
+  background-color: var(--bg-color-title);
+}
+
+.home-main__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: var(--font-Xlarge);
+  width: 100%;
+  height: 80px;
+}
+
+.home-main__header--go {
+  padding-right: var(--padding-default);
+  color: var(--title-white);
+}
+
+.home-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: var(--margin-8x);
+}
+
+.home-main__text {
+  width: 80%;
+  font-size: 7.5rem;
+  text-align: center;
+  margin: var(--margin-default) 0px;
+}
+
+.home-main__text.familyAlbum,
+.home-main__text.kyoungHee {
+  position: relative;
+}
+
+.home-main__img {
+  position: absolute;
+}
+
+.home-main__img.feelSpecial {
+  top: -80px;
+  right: 40px;
+}
+
+.home-main__img.yesOrYes {
+  top: -30px;
+  left: 210px;
+}
+
+.home-main__bigImg-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-main__bigImg {
+  width: 30%;
+}
+
+/* about us(about.html) page */
+
+#main {
+  width: 100%;
+  background-color: var(--bg-color-title);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  min-height: 100vh;
 }
 
 .main__container {
@@ -64,8 +115,8 @@
 .main__dday {
   width: 33%;
   text-align: center;
-  font-size: var(--font-regular);
-  color: var(--bg-color-main);
+  font-size: var(--font-large);
+  color: var(--bg-color-body);
 }
 
 .main__image-container {
@@ -79,11 +130,12 @@
 .main__wedding-text {
   position: absolute;
   display: none;
-  font-size: var(--font-large);
+  font-size: var(--font-Xlarge);
 }
 
 .main__wedding-img {
   width: 100%;
+  min-width: 500px;
   /* border-radius: 5px; */
 }
 
@@ -92,7 +144,11 @@
 }
 
 .footer {
+  width: 100%;
   text-align: center;
+  line-height: 80px;
+  background-color: var(--bg-color-title);
   color: var(--bg-color-main);
-  margin-bottom: var(--margin-2x);
+  height: 80px;
+  border-top: 1px solid var(--bg-color-main);
 }
